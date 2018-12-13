@@ -22,7 +22,7 @@ h2, h1 {
 	font-family: 'Pacifico', cursive;
 }
 
-.btn {
+.btn-landing {
 position: relative;
 right: 90%;
 }
@@ -67,6 +67,13 @@ right: 90%;
 
 }
 
+
+.btn-home {
+	margin-top: 100px;
+	font-size: black;
+	background-color: #9966FF;
+}
+
 .clear:after {
 	content: "";
 	clear: both;
@@ -77,8 +84,12 @@ right: 90%;
  	font-family: 'Lobster Two', cursive;
 }
 
+.card-text {
+	height: 60px;
+}
+
 .card-body {
-	overflow: auto;
+	overflow: hidden;
 }
 
 .about-header {
@@ -88,6 +99,7 @@ right: 90%;
 
 .about-content {
 	margin-top: 50px;
+	color: #d279a6;
 
 }
 
@@ -102,6 +114,83 @@ right: 90%;
 	border-right-width: 2px;
 }
 
+.gallerypage {
+	width: 1000px;
+	height: 780px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-left-color: #d279a6;
+	border-right-color: #d279a6;
+	border-left-width: 2px;
+	border-right-width: 2px;
+}
+
+.carousel-gallery {
+	animation-name: pulse;
+	animation-duration: 2.5s;
+	animation-delay: 2s;
+	animation-play-state: inherit;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content, #caption { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 footer {
 	width:100%;
