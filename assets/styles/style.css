@@ -18,7 +18,7 @@
 
 }
 
-h2,p {
+h2, h1 {
 	font-family: 'Pacifico', cursive;
 }
 
@@ -27,7 +27,7 @@ position: relative;
 right: 90%;
 }
 
-.home {
+.home, .about {
 	width: 100%;
 	height: 100vh;
 }
@@ -61,8 +61,8 @@ right: 90%;
 .card {
 	float: left;
 	margin-top: 20px;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
 	margin-bottom: 20px;
 
 }
@@ -73,13 +73,33 @@ right: 90%;
 	display: block;
 }
 
+.card-text-header {
+ 	font-family: 'Lobster Two', cursive;
+}
 
-.container-fluid {
-	width: 1200px;
+.card-body {
+	overflow: auto;
+}
+
+.about-header {
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.about-content {
+	margin-top: 50px;
+
+}
+
+.aboutpage {
+	width: 1000px;
 	height: 780px;
 	margin: 0 auto;
-	border: 1px solid black;
 	margin-top: 20px;
+	border-left-color: #d279a6;
+	border-right-color: #d279a6;
+	border-left-width: 2px;
+	border-right-width: 2px;
 }
 
 
